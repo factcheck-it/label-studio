@@ -11,11 +11,27 @@
 
 Label Studio is an open source data labeling tool. It lets you label data types like audio, text, images, videos, and time series with a simple and straightforward UI and export to various model formats. It can be used to prepare raw data or improve existing training data to get more accurate ML models.
 
+- [What is Label Studio?](#what-is-label-studio)
 - [Try out Label Studio](#try-out-label-studio)
+  - [Install locally with Docker](#install-locally-with-docker)
+    - [Override default Docker install](#override-default-docker-install)
+    - [Build a local image with Docker](#build-a-local-image-with-docker)
+  - [Run with Docker Compose](#run-with-docker-compose)
+  - [Install locally with pip](#install-locally-with-pip)
+  - [Install locally with Anaconda](#install-locally-with-anaconda)
+  - [Install for local development](#install-for-local-development)
+  - [Deploy in a cloud instance](#deploy-in-a-cloud-instance)
+    - [Apply frontend changes](#apply-frontend-changes)
+  - [Troubleshoot installation](#troubleshoot-installation)
+    - [Install dependencies on Windows](#install-dependencies-on-windows)
 - [What you get from Label Studio](#what-you-get-from-label-studio)
 - [Included templates for labeling data in Label Studio](#included-templates-for-labeling-data-in-label-studio)
-- [Set up machine learning models with Label Studio](#set-up-machine-learning-models-with-Label-Studio)
+- [Set up machine learning models with Label Studio](#set-up-machine-learning-models-with-label-studio)
 - [Integrate Label Studio with your existing tools](#integrate-label-studio-with-your-existing-tools)
+- [Ecosystem](#ecosystem)
+- [Roadmap](#roadmap)
+- [Citation](#citation)
+- [License](#license)
 
 ![Gif of Label Studio annotating different types of data](https://raw.githubusercontent.com/heartexlabs/label-studio/master/images/annotation_examples.gif)
 
@@ -99,7 +115,7 @@ python label_studio/manage.py runserver
 
 You can deploy Label Studio with one click in Heroku, Microsoft Azure, or Google Cloud Platform: 
 
-[<img src="https://www.herokucdn.com/deploy/button.svg" height="30px">](https://heroku.com/deploy?template=https://github.com/heartexlabs/label-studio/tree/master)
+[<img src="https://www.herokucdn.com/deploy/button.svg" height="30px">](https://heroku.com/deploy?template=https://github.com/factcheck-it/label-studio/tree/master)
 [<img src="https://aka.ms/deploytoazurebutton" height="30px">](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fheartexlabs%2Flabel-studio%2Fmaster%2Fazuredeploy.json)
 [<img src="https://deploy.cloud.run/button.svg" height="30px">](https://deploy.cloud.run)
 

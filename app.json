@@ -1,10 +1,10 @@
 {
-  "name": "Label Studio",
-  "description": "Multi-type data labeling, annotation and exploration tool",
+  "name": "Factcheck-it Annotate",
+  "description": "Annotate fact-checking articles on the cloud.",
   "keywords": ["data annotation", "data labeling"],
-  "website": "https://labelstud.io",
-  "repository": "https://github.com/heartexlabs/label-studio",
-  "logo": "https://labelstud.io/images/opossum/heartex_icon_opossum_green.svg",
+  "website": "https://annotate.factcheck-it.org",
+  "repository": "https://github.com/factcheck-it/factcheck-it",
+  "logo": "https://github.com/factcheck-it/label-studio/blob/master/images/factcheck-it_icon.svg",
   "stack": "container",
   "env": {
     "LABEL_STUDIO_ONE_CLICK_DEPLOY": {
@@ -14,7 +14,7 @@
     },
     "DISABLE_SIGNUP_WITHOUT_LINK": {
       "description": "Disable signup for users without invite link",
-      "value": "0",
+      "value": "1",
       "required": false
     },
     "USERNAME": {
@@ -26,6 +26,31 @@
       "description": "Password for default user",
       "value": "",
       "required": false
+    },
+    "DJANGO_DB": {
+      "description": "Type of database for Django",
+      "value": "default",
+      "required": false
+    },
+    "GOOGLE_CREDENTIALS": {
+      "description": "Content of the Google Cloud OAuth Json file",
+      "value": "",
+      "required": false
+    },
+    "GOOGLE_APPLICATION_CREDENTIALS": {
+      "description": "Path to generated Google credentials file",
+      "value": "google-credentials.json",
+      "required": false
     }
-  }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/buyersight/heroku-google-application-credentials-buildpack.git"
+    }
+  ]
 }

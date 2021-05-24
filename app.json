@@ -4,7 +4,7 @@
   "keywords": ["data annotation", "data labeling"],
   "website": "https://annotate.factcheck-it.org",
   "repository": "https://github.com/factcheck-it/factcheck-it",
-  "logo": "https://github.com/factcheck-it/label-studio/blob/master/images/factcheck-it_icon.svg",
+  "logo": "https://github.com/factcheck-it/factcheck-it/blob/master/docs/source/images/factcheck-it_logo_name.png",
   "stack": "container",
   "env": {
     "LABEL_STUDIO_ONE_CLICK_DEPLOY": {

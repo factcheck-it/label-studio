@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: ./deploy/heroku_run.sh
+  web: echo $GOOGLE_CREDENTIALS > $GOOGLE_APPLICATION_CREDENTIALS && ./deploy/heroku_run.sh
